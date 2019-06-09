@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "pandoc_static_katex"
+author = "Zahari Kassabov"
+author-email = "zk261@cam.ac.uk"
+home-page = "https://github.com/Zaharid/pandoc_static_katex"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python=">3.6"
+requires=["pandocfilters"]
+
+[tool.flit.scripts]
+pandoc-static-katex = "pandoc_static_katex:main"

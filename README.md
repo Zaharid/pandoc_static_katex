@@ -15,7 +15,7 @@ $ cat math.md
 This is inline $\log(\frac{1}{2})$ and this is display:
 
 $$
-\int_{-\infty}^{+\infty}\Lamda(x)dx
+\int_{-\infty}^{+\infty}\LambdaLamda(x)dx
 $$
 
 $ pandoc -s  math.md --filter pandoc-static-katex --to html5 --css https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css -o math.html

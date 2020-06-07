@@ -8,7 +8,7 @@ author = "Zahari Kassabov"
 author-email = "zk261@cam.ac.uk"
 home-page = "https://github.com/Zaharid/pandoc_static_katex"
 classifiers = ["License :: OSI Approved :: MIT License"]
-requires-python=">3.6"
+requires-python=">3.7"
 requires=["pandocfilters"]
 description-file="README.md"
 

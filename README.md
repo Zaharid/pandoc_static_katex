@@ -21,8 +21,8 @@ $$
 $ pandoc -s  math.md --filter pandoc-static-katex --to html5 --css https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css -o math.html
 ```
 
-Note that the `--katex` of `pandoc` option doesn't add the styles since `pandoc`
-doesn't see any math element after the filter pass.
+Note that the `--katex` option of `pandoc` option doesn't add the styles since
+`pandoc` doesn't see any math element after the filter pass.
 
 ## Installation
 
@@ -31,6 +31,8 @@ The script can be installed by pip:
 ```
 python3 -m pip install pandoc_static_katex
 ```
+
+The filter runs in Python 3.7+.
 
 When the filter is run, KaTeX needs to be installed with
 [nodejs](https://nodejs.org/en/); the command

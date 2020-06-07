@@ -11,7 +11,7 @@ npx katex
 is assumed to exist in the PATH.
 """
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 import subprocess
 import html

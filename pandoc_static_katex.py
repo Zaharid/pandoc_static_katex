@@ -11,12 +11,17 @@ npx katex
 is assumed to exist in the PATH.
 """
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 
 import subprocess
 import html
+import shutil
 
 import pandocfilters
+
+npx = shutil.which('npx')
+if npx is None:
+    raise RuntimeError("npx executable not found.")
 
 
 def katex(key, value, format, meta):
@@ -27,7 +32,7 @@ def katex(key, value, format, meta):
         return None
     display = fmt['t'] == 'DisplayMath'
     call = subprocess.run(
-        ['npx', 'katex', '--no-throw-on-error', '--display-mode' if display else ''],
+        [npx, 'katex', '--no-throw-on-error', '--display-mode' if display else ''],
         input=code,
         text=True,
         capture_output=True,

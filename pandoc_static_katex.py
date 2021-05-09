@@ -37,6 +37,7 @@ def katex(key, value, format, meta):
         text=True,
         capture_output=True,
         check=True,
+        encoding='utf-8',
     )
     return pandocfilters.RawInline(
         'html',
